@@ -17,6 +17,10 @@ package main
 //	这个框架分两部分：一部分是用于生成mock替身的mockgen二进制程序，另一部分则是生成的代码所要使用的gomock包。
 //	go install github.com/golang/mock/mockgen@v1.6.0
 //生成mock代码
+//  7.基准测试。
+//		go基准比较工具 1》 benchcmp（https://github.com/golang/tools/tree/master/cmd/benchcmp）
+//					 2》benchstat（https://github.com/golang/perf/tree/master/benchstat）
+
 //go:generate mockgen -source=./fake.go -destination=./mock.go -package=main Mailer
 
 // Error/Errorf、Fatal/Fatalf
